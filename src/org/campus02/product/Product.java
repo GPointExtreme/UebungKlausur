@@ -32,9 +32,9 @@ public class Product {
 
 	public String gesamtParts(Product p, String i) {
 		if(p.parts.contains(null)) {
-			return i + p.name + " " + p.price + "\n";
+			return i + p.name + " " + p.gesamtPreis() + "\n";
 		}
-		String par = i + p.name + " " + p.price + "\n";
+		String par = i + p.name + " " + p.gesamtPreis() + "\n";
 		i += " ";
 		for (Product product : p.parts) {
 			par += gesamtParts(product, i);

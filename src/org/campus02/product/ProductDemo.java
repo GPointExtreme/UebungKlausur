@@ -32,9 +32,6 @@ public class ProductDemo {
 		MacBook.setParts(MacParts);
 		
 		System.out.print(MacBook.gesamtParts(MacBook, ""));
-		
-		System.out.print("Gesamtpreis: " + MacBook.gesamtPreis());
-
 
 	}
 
