@@ -20,10 +20,10 @@ public class FacebookDemo {
 		
 		MayBe<GregorianCalendar> gebDatum = new MayBe<GregorianCalendar>(new GregorianCalendar(1988, 8, 8), MayBe.ZugriffErlaubt);
 		
-		gebDatum.printData();
+		System.out.println(gebDatum);
 		
 		MayBe<Integer> gehalt = new MayBe<Integer>(new Integer(1000), MayBe.ZugriffVerboten);
 		
-		gehalt.printData();
+		System.out.println(gehalt);
 	}
 }

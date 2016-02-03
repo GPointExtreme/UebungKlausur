@@ -23,20 +23,16 @@ public class MayBe<T> {
 	public static final int ZugriffVerboten = 2;
 	public static final int NichtVorhanden = 3;
 	
-	public void printData() {
+	public String toString() {
 		switch (status) {
-		case 1:
-			System.out.println("Zugriff erlaubt: " + data);
-			break;
-		case 2:
-			System.out.println("Zugriff nicht erlaubt!");
-			break;
-		case 3:
-			System.out.println("Daten nicht vorhanden!");
-			break;	
+		case ZugriffErlaubt:
+			return "Zugriff erlaubt: " + data;
+		case ZugriffVerboten:
+			return "Zugriff nicht erlaubt!";
+		case NichtVorhanden:
+			return "Daten nicht vorhanden!";	
 		default:
-			System.out.println("Ungültiger Status");
-			break;
+			return "Ungültiger Status";
 		}
 	}
 }
